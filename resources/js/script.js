@@ -11,8 +11,8 @@ $(function(){
         $("#footer").html(result);
     });
 
-    // -- Cargar pagina 1
-    $.ajax("/pages/page1.html").done(function(result){
+    // -- Cargar slide
+    $.ajax("../../pages/slide.html").done(function(result){
         $("#content-principal").html(result);
     });
 
@@ -22,8 +22,8 @@ $(function(){
         var url = $(this).attr("href");
 
         // -- Cargo el contenido de la pagina en el div principal
-        $.ajax(url).done(function(result){
-            $("#content-principal").html(result);
-        });
+        // $.ajax(url).done(function(result){
+        //     $("#content-principal").html(result);
+        // });
     });
 });
